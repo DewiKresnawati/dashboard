@@ -18,15 +18,17 @@ class HomePage extends StatelessWidget {
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 children: [
-                  _buildMenuItem(context, Icons.dashboard, 'Dashboard', '/dashboard'),
+                  _buildMenuItem(
+                      context, Icons.dashboard, 'Dashboard', '/dashboard'),
                   _buildMenuItem(context, Icons.add, 'Add Sale', '/add'),
-                  _buildMenuItem(context, Icons.update, 'Update Sale', '/update'),
+                  _buildMenuItem(
+                      context, Icons.update, 'Update Sale', '/update'),
                   _buildMenuItem(context, Icons.logout, 'Logout', '/login'),
                 ],
               ),
               SizedBox(height: 50),
-              Text('Nama: Wafid Adzka Haifan Mukhayyar'),
-              Text('NPM: 714220014'),
+              Text('Nama: Dewi Kresnawati'),
+              Text('NPM: 714220002'),
             ],
           ),
         ),
@@ -34,7 +36,8 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Widget _buildMenuItem(BuildContext context, IconData icon, String label, String route) {
+  Widget _buildMenuItem(
+      BuildContext context, IconData icon, String label, String route) {
     return InkWell(
       onTap: () {
         Navigator.pushNamed(context, route);
